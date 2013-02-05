@@ -23,8 +23,8 @@ Background: movies have been added to database
   
 Scenario: restrict to movies with 'PG' or 'R' ratings
  When I check the following ratings: PG, R
-And I uncheck the following ratings: G, PG-13
-When I press "Refresh"
+ And I uncheck the following ratings: G, PG-13
+ When I press "Refresh"
 
 Then I should see "The Terminator"
   And I should see "When Harry Met Sally"
